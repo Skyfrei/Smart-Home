@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "w33aKdlSkWOG4cc2BehAfEaHpuDNKrclFy3gGPXxNeY8B6ThvgTvS/IwRcqY/Juy/IQy6zIRa6+MX2D5z0m51A==",
+  "success": true,
+  "projectFilePath": "C:\\Important\\School\\Advanced computer science\\Project\\ASE_Team_0508\\implementation\\UserBasedService\\UserBasedService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tarka\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\tarka\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\tarka\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\tarka\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\tarka\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\tarka\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

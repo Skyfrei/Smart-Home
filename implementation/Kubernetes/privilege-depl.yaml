@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: privilege-depl
+spec:
+  replicas: 1 #basically kubernetes makes sure even if our service dies that it starts it again, hence the replica = 1. There must always be at least 1 replica.
+  selector: 
+    matchLabels: 
+      app: privilegeservice
+  template:
+    metadata: 
+      labels: 
+        app: privilegeservice
+    spec:
+      containers:
+        - name: privilegeservice
+          image: maxxburn/privilegeservice:latest
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: privilege-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: privilegeservice
+  ports:
+  - name: privilegeservice
+    protocol: TCP
+    port: 80
+    targetPort: 80 

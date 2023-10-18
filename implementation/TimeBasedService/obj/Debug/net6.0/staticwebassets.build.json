@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RIn5dH9shmCVF8LldX+i7kJmoMukBDTZB1SuPyiW9zM=",
+  "Source": "TimeBasedService",
+  "BasePath": "_content/TimeBasedService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

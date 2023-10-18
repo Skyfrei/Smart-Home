@@ -1,0 +1,19 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+docker-build-notification:
+  only:
+    - master
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE" .
+    - docker push "$CI_REGISTRY_IMAGE"
+  after_script:
+    - docker logout ${CI_REGISTRY}
+  stage: build
+  tags: 
+    - ase-0508
+    

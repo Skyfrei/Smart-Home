@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: homelayout-depl
+spec:
+  replicas: 1 #basically kubernetes makes sure even if our service dies that it starts it again, hence the replica = 1. There must always be at least 1 replica.
+  selector: 
+    matchLabels: 
+      app: homelayoutservice
+  template:
+    metadata: 
+      labels: 
+        app: homelayoutservice
+    spec:
+      containers:
+        - name: homelayoutservice
+          image: maxxburn/homelayoutservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: homelayout-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: homelayoutservice
+  ports:
+  - name: notificationservice
+    protocol: TCP
+    port: 80
+    targetPort: 80 

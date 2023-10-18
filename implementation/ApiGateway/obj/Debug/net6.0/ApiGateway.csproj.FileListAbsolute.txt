@@ -1,0 +1,71 @@
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\appsettings.Development.json
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\appsettings.json
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\ApiGateway.exe
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\ApiGateway.deps.json
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\ApiGateway.runtimeconfig.json
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\ApiGateway.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\ApiGateway.pdb
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\AutoMapper.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Humanizer.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Coding\C#\SchoolProject\ApiGateway\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.csproj.AssemblyReference.cache
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.AssemblyInfoInputs.cache
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.AssemblyInfo.cs
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.csproj.CoreCompileInputs.cache
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\staticwebassets.build.json
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\staticwebassets.development.json
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\scopedcss\bundle\ApiGateway.styles.css
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.csproj.CopyComplete
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.dll
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\refint\ApiGateway.dll
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.pdb
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ApiGateway.genruntimeconfig.cache
+C:\Coding\C#\SchoolProject\ApiGateway\obj\Debug\net6.0\ref\ApiGateway.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\appsettings.Development.json
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\appsettings.json
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\ApiGateway.exe
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\ApiGateway.deps.json
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\ApiGateway.runtimeconfig.json
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\ApiGateway.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\ApiGateway.pdb
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\AutoMapper.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Humanizer.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.csproj.AssemblyReference.cache
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.AssemblyInfoInputs.cache
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.AssemblyInfo.cs
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.csproj.CoreCompileInputs.cache
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\staticwebassets.build.json
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\staticwebassets.development.json
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\scopedcss\bundle\ApiGateway.styles.css
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.csproj.CopyComplete
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\refint\ApiGateway.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.pdb
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ApiGateway.genruntimeconfig.cache
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\obj\Debug\net6.0\ref\ApiGateway.dll
+C:\Important\School\Advanced computer science\Project\ASE_Team_0508\implementation\ApiGateway\bin\Debug\net6.0\appsettings.Production.json

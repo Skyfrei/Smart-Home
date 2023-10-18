@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "brPnCB3PLVP4YkIHeW8VY+fVu/vm4SrJAmh1JNoKZu8=",
+  "Source": "PrivilegeService",
+  "BasePath": "_content/PrivilegeService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,228 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <div class="btn-group">
+        <button id="allusers">Get all users</button>
+        <button id="createuser">Create user</button>
+        <button id="getroomlayout">Get room layout</button>
+        <button id="getallnotif">Get all notifications</button>
+        <button id="getspecificnotif">Get specific notifications</button>
+        <button id="createnewroom">Create New Room</button>
+        <button id="changesmartdevices">Change smart device id for room</button>
+        <button id="timebased">Create timebased action</button>
+        <button id="adddeviceinroom">Add new device in room</button>
+        <button id="getalldevicesinroom">Get All Devices in room</button>
+        
+    </div> 
+
+    <div class="row">
+        <div class="column" id ="userFields">
+            <label>Create User:</label>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+            </form> 
+        </div>
+
+        <div class="column" id ="notificationFields">
+            <label>Create time based action:</label>
+            <br><label>Device Type:</label>
+            <select name="deviceType" id="deviceType">
+                <option value="light">Light</option>
+                <option value="shower">Shower</option>
+                <option value="boiler">Boiler</option>
+                <option value="window">Window</option>
+                <option value="door">Door</option>
+            </select>
+            <label>Room Id:</label>
+            <select name="deviceType" id="deviceType">
+                <option value="room1">Room 1</option>
+                <option value="room2">Room 2</option>
+                <option value="room3">Room 3</option>
+                <option value="room4">Room 4</option>
+                <option value="room5">Room 5</option>
+            </select>
+        </div>
+    </div>
+
+    <br><br>
+    
+    <div class="row">
+        <div class="column" id ="changeSmartDeviceId">
+            <label>Change which smart device controls the room:</label>
+            <br><label>Smart Device Id:</label>
+            <select id="roomIdinsmart">
+                <option value="room11">Room 1</option>
+                <option value="room22">Room 2</option>
+                <option value="room33">Room 3</option>
+                <option value="room44">Room 4</option>
+                <option value="room55">Room 5</option>
+            </select>
+            <label>Room Id:</label>
+            <select id="smartdevice">
+                <option value="smartdevice1">Smart Device 1</option>
+                <option value="smartdevice2">Smart Device 2</option>
+                <option value="smartdevice3">Smart Device 3</option>
+            </select>
+        </div>
+        <div class="column" id ="userFields">
+            <label>Create New Room:</label>
+            <form>
+                <label>Room Name:</label>
+                <input type="text" id="roomName"><br><br>
+            </form> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <label>Adding new device in the room:</label><br>
+            <select name="deviceType" id="deviceType3">
+                <option value="device11">Light</option>
+                <option value="device22">Shower</option>
+                <option value="device33">Boiler</option>
+                <option value="device44">Window</option>
+                <option value="device55">Door</option>
+            </select>
+            <br>
+             <select name="deviceType" id="room3">
+                <option value="room111">Room 1</option>
+                <option value="room222">Room 2</option>
+                <option value="room333">Room 3</option>
+                <option value="room444">Room 4</option>
+                <option value="room555">Room 5</option>
+            </select>
+        </div>
+       
+    </div>
+
+</div>
+
+<script>
+let getUsers = false;
+
+function UserReadDto(obj) {
+  this.username = obj.username;
+  this.password = obj.password;
+  this.email = obj.email;
+}
+
+async function fetchAsync (url) {
+  
+    const req = await fetch(url);
+    return req.json();
+}
+
+async function sendData(url, data)
+{
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+
+   //xhr.setRequestHeader("Accept", "application/json");
+   xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onload = () => console.log(xhr.responseText);
+
+    xhr.send(data);
+}
+
+document.getElementById('allusers').addEventListener('click', async function() {
+    let url = "http://localhost:31871/apigateway/getallusers";
+    let values = await fetchAsync(url);
+    console.log(values);
+});
+
+document.getElementById('getroomlayout').addEventListener('click', async function() {
+    let url = "http://localhost:31871/apigateway/GetRoomLayout";
+    let values = await fetchAsync(url);
+    console.log(values);
+});
+
+document.getElementById('getallnotif').addEventListener('click', async function() {
+    let url = "http://localhost:31871/apigateway/getallnotification";
+    let values = await fetchAsync(url);
+    console.log(values);
+}); 
+
+document.getElementById('createuser').addEventListener('click', async function() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var email = document.getElementById('email').value;
+    if (username=="" || password == "" || email == "")
+    {
+        console.log("Input fields pls");
+    }
+    else
+    {
+        let user1 =`{
+  "username": "${username}",
+  "email": "${email}",
+  "password": "${password}"
+}`;
+        let url = "http://localhost:31871/apigateway/CreateUser";
+        console.log(user1);
+        await sendData(url, user1);
+    }
+   
+}); 
+
+document.getElementById('createnewroom').addEventListener('click', async function() {
+    var roomName = document.getElementById('roomName').value;
+    if (roomName=="")
+    {
+        console.log("---> Input room name pls!");
+    }
+    else
+    {
+        let user1 =`{
+        "name": "${roomName}",
+        "smartdeviceid": 1
+        }`;
+        let url = "http://localhost:31871/apigateway/CreateNewRoom";
+        console.log(user1);
+        await sendData(url, user1);
+    }
+   
+}); 
+
+document.getElementById('changesmartdevices').addEventListener('click', async function() {
+    var room = document.getElementById('roomIdinsmart').value.slice(-1);
+    var roomId = parseInt(room);
+    var smartdeviceID = document.getElementById('smartdevice').value.slice(-1);
+    var smartDev = parseInt(smartdeviceID);
+
+    
+
+    let user1 =`{
+    "id": ${roomId},
+    "smartdeviceid": ${smartDev},
+    "name": "whatever"
+    }`;
+    let url = "http://localhost:31871/apigateway/ChangeSmartDeviceId";
+    console.log(user1);
+    await sendData(url, user1);
+   
+}); 
+
+document.getElementById('getalldevicesinroom').addEventListener('click', async function() {
+    var room = document.getElementById('room3').value.slice(-1);
+    var roomDev = parseInt(room);
+    var smartdeviceID = document.getElementById('deviceType3').value.slice(-1);
+    var smartDev = parseInt(smartdeviceID);
+
+    let url = "http://localhost:31871/apigateway/GetAllDevices";
+    
+    let values = await fetchAsync(url);
+    console.log(values);
+}); 
+
+</script>

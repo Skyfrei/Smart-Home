@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: apigateway-depl
+spec:
+  replicas: 1 #basically kubernetes makes sure even if our service dies that it starts it again, hence the replica = 1. There must always be at least 1 replica.
+  selector: 
+    matchLabels: 
+      app: apigateway
+  template:
+    metadata: 
+      labels: 
+        app: apigateway
+    spec:
+      containers:
+        - name: apigateway
+          image: maxxburn/apigateway:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apigateway-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: apigatewayservice
+  ports:
+  - name: apigatewayservice
+    protocol: TCP
+    port: 80
+    targetPort: 80 

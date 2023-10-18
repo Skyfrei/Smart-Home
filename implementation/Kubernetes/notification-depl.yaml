@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: notification-depl
+spec:
+  replicas: 1 #basically kubernetes makes sure even if our service dies that it starts it again, hence the replica = 1. There must always be at least 1 replica.
+  selector: 
+    matchLabels: 
+      app: notificationservice
+  template:
+    metadata: 
+      labels: 
+        app: notificationservice
+    spec:
+      containers:
+        - name: notificationservice
+          image: maxxburn/notificationservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: notification-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: notificationservice
+  ports:
+  - name: notificationservice
+    protocol: TCP
+    port: 80
+    targetPort: 80 

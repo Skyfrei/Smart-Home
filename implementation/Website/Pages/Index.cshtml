@@ -1,0 +1,60 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+   
+    <div>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+        </form> 
+    </div>
+    
+    <div>
+        <button type="submit" id ="login">Login</button>
+
+        <a asp-page="/Register"><button type="button">Register</button></a>  
+        
+    </div>
+
+</div>
+<script>
+
+function jsonify(obj) {
+  this.username = obj.username;
+  this.password = obj.password;
+}
+
+async function fetchAsync (url) {
+  
+    const req = await fetch(url);
+    return req.json();
+}
+
+    document.getElementById('login').addEventListener('click', async function() {
+    var name = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var login = new jsonify({
+        username: name,
+        password: password,
+    }); 
+    let url = "http://localhost:31871/apigateway/getallusers";
+    let values = await fetchAsync(url);
+    console.log(values);
+    for (let i = 0; i < values.length; i++)
+    {
+        if ((name == values[i].username || name == values[i].email) && password == values[i].password)
+        {
+            console.log("Logged in!");
+            window.location = "MainMenu"
+        }
+        //console.log(values[i].username);
+        //console.log(values[i].password);
+    }
+});
+</script>
